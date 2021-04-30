@@ -12,3 +12,7 @@ icon.addEventListener("mouseout",function(){
     icon.style.height="2rem";
     icon.style.width="2rem";
 })
+
+
+
+  AOS.init();

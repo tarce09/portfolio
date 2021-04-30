@@ -13,14 +13,26 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Merriweather+Sans:wght@500&family=Oswald:wght@300&family=Rubik:wght@500&family=Titillium+Web:wght@600&display=swap" rel="stylesheet">
-    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <script src="aboutme.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
-    </head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        $(window).on("load",function(){
+          $(".loader-wrapper").fadeOut("slow");
+          $(".navbar").add(".fixed-top");
+        });
+    </script>
     
+    </head>
     <body >
     
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top " >
+<!--stating position home-->    
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" >
   <div class="container-fluid">
     <a class="navbar-brand" href="#" id="title">PORTFOLIO</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,18 +44,19 @@
           <a class="nav-link active current headertext" aria-current="page" href="#">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link headertext" href="contact.html">Contact</a>
+          <a class="nav-link headertext" href="#contacts">Contact</a>
         </li>
         <li class="nav-item headertext">
-          <a class="nav-link" href="projects.html">Projects</a>
+          <a class="nav-link" href="#projects">Projects</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link headertext" href="aboutme.html">About Me</a>
+          <a class="nav-link headertext" href="#about">About Me</a>
         </li>
         </form>
     </div>
   </div>
 </nav>
+
 <div class=" banner container ">
   <div class="row fade-in">
     <div class="col-lg-7 col-md-6">
@@ -51,16 +64,160 @@
       <p class="hello" data-text="hello">HELLO</p>
       <div class="intro ">I AM ARYAN </div>
       <div class="basic1">I'M a <span class="animate basic"></span></div>
-      <br><a href="#" class="btn btn-outline-light linkedin ">Resume</a>
+      <br><a href="#" class="btn btn-dark  linkedin ">Resume</a>
     </div>
     </div>
     <div class="col-lg-5 col-md-6">
-      <img src="Untitled83.png" id="imageperson" class="]">
+      <img src="" id="imageperson" class="]">
     </div>
   </div> 
 </div>
-
 <p>
+
+<!--aboutme.html-->
+
+<a name="about"></a>
+<div class=  'aboutmesec'>
+<div class="container cont2 " data-aos="fade-bootom" data-aos-duration="10000">
+<h1 class="briefhead" >Brief About My Carrer</h1>
+<div class="briefcontent" >Hi, I am ARYAN a student at MIT ADT University, Pune, pursuing Btech in Computer Science .
+My primary skills are Full Stack Web development , Game Development , Graphic designing and Programming . My primary programming language is Python
+I have freelanced and gained experience of over an year in Graphic Design and am also into Web Development.<br><br>.</div>
+
+
+<!--projects-->
+<a name="projects"></a>
+<div class=" banner">
+  <div class="row fade-in">
+    <div class="col-lg-7 col-md-6">
+    <div class="container pading content1">
+      <div class="intro ">Projects </div>
+      <div class="basic1">I have done a variety of projects ranging from websites to works on various python libraries. I also being the co-founder of 
+      <a href="" class="link">2-dev studios</a> have developed a few games in unity engine . You can check all my projects by clicking on the projects button below .</div>
+      <br><a href="projects.html" class="btn btn-dark linkedin ">Projects</a>
+    </div>
+    </div>
+    <div class="col-lg-5 col-md-6 projectimg">
+      <img src="_Pngtree_modern_flat_design_concept_of_5332889-removebg.png" id="imageperson" class="">
+    </div>
+  </div> 
+</div>
+<p>
+
+<!--Skills-->
+<a name="skills"></a>
+<div class="space">
+</div>
+<div class="container padding-2">
+<div class="row fade-in">
+    <div class="col-lg-8 col-md-6" data-aos="fade-bootom" data-aos-duration="10000">
+    <div class="container pading">
+      <div class="subtitle1 container" >Game Developer</div>
+      <div class="basic1 subtext1 ">I had started game development in 2019 in unity game engine . I and a classmate founded a game devevelopment startup named <b>2DEV STUDIOS</b> to develop games commercially.</div>
+    </div>
+    </div>
+    <div class="col-lg-4 col-md-6" data-aos="fade-bootom" data-aos-duration="10000">
+    <div class="container">
+      <img src="https://image.freepik.com/free-vector/flat-video-game-development-infographic_1212-84.jpg"  class="images shadow">
+    </div>
+    </div>
+  </div> 
+  </div>
+  </div>
+
+<div class="container pading-2 " >
+<div class="row fade-in">
+    <div class="col-lg-8 col-md-6" data-aos="fade-bootom" data-aos-duration="10000">
+    <div class="container pading">
+      <div class="subtitle1 container" > Web Developer </div>
+      <div class="basic1 subtext1">I was intially  a backend developer using django and sqlite but later became a full stack developer capable of building industry level responsive webpages using the conventional front end tools .</div>
+    </div>
+    </div>
+    <div class="col-lg-4 col-md-6" data-aos="fade-bootom" data-aos-duration="10000">
+    <div class="container">
+      <img src="https://cdn0.iconfinder.com/data/icons/long-shadow-web-icons/512/html-512.png"  class="images shadow">
+    </div>
+    </div>
+  </div> 
+  </div>
+  </div>
+
+  <div class="container pading-2 " >
+<div class="row fade-in">
+    <div class="col-lg-8 col-md-6" data-aos="fade-bootom" data-aos-duration="10000">
+    <div class="container pading">
+      <div class="subtitle1 container"> Grapic Designer</div>
+      <div class="basic1 subtext1">I had started practising gfx from 2018 as a beginner and have made many projects as an freelancer like samll gfx and vfx works for individuals for about an year.</div>
+    </div>
+    </div>
+    <div class="col-lg-4 col-md-6" data-aos="fade-bootom" data-aos-duration="10000">
+    <div class="container">
+      <img src="https://image.freepik.com/free-vector/graphic-design-designer-concept-with-laptop-sketching-pen-tablet-tools-with-isometric-style_197170-89.jpg"  class="images shadow">
+    </div>
+    </div>
+  </div> 
+  </div>
+  </div>
+
+  <div class="container pading-2 " >
+<div class="row fade-in">
+    <div class="col-lg-8 col-md-6" data-aos="fade-bootom" data-aos-duration="10000">
+    <div class="container pading">
+      <div class="subtitle1 container" > Programmer </div>
+      <div class="basic1 subtext1 ">I have started Programming competitively from 2020 and learned and did many projects using various python libraries like pandas, matplotlib, discord.py etc. I am also a Machine Learing enthusiast and am familiar with basic regression techniques.</div>
+    </div>
+    </div>
+    <div class="col-lg-4 col-md-6" data-aos="fade-bootom" data-aos-duration="10000">
+    <div class="container ">
+      <img src="https://cdn.pixabay.com/photo/2016/10/28/01/24/pc-1776995__340.png"  class="images shadow">
+    </div>
+    </div>
+  </div> 
+  </div>
+  </div>
+</div>
+<!--footer-->
+<div class="space"></div>
+<a name="contacts"></a>
+    <div class="foot ">
+        <div class="info container"><br>
+        <p class="foottext">These are my socail media handles and my email adress</p>
+        <div class="socials container">
+        <ul class="handles">
+            <li class="lis">
+            <a href="https://instagram.com/intruder_x?igshid=1af49fo566vm5" target="_blank" class="icons">
+                <i class="fab fa-instagram"></i>
+            </a>
+            </li>
+            <li class="lis">
+            <a href="https://twitter.com/Intruderx5?s=08" target="_blank" class="icons">
+                <i class="fab fa-twitter"></i>
+            </a></li>
+            <li class="lis">
+            <a href="https://www.linkedin.com/in/t-aryan-raju-9459311b3" target="_blank" class=" icons">
+                <i class="fab fa-linkedin-in"></i>
+            </a></li>
+            <li class="lis">
+            <a href="https://github.com/tarce09" target="_blank" class="icons">
+                <i class="fab fa-github"></i>
+            </a></li>
+        </ul>
+        </div>
+        <div class="handles">
+        <div class="email">
+        <i class="fas fa-envelope-open-text"></i>
+        <span class="emailtext">aryanraju09@gmail.com</span>
+        </div>
+        </div>
+        <div class="copyright">
+            copyright <i class="far fa-copyright"></i> 2021 all rights reserved
+        </div>
+        </div>
+    </div>
+
+<div class="loader-wrapper fixed-top">
+      <span class="loader"><span class="loader-inner"></span></span>
+    </div>
 
 <script>
 var typed=new Typed('.animate',{
